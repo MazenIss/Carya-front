@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     NavBarComponent,
     HomePageComponent,
     CarouselComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
