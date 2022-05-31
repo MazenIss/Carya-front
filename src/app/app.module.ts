@@ -7,6 +7,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TeamComponent } from './components/team/team.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TeamComponent } from './components/team/team.component';
     HomePageComponent,
     CarouselComponent,
     TeamComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
