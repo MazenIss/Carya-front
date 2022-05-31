@@ -1,22 +1,25 @@
 
 /* Container holding the image and the text */
-.container {
+.container1 {
     position: relative;
     
     
   }
   
-
+  .check{
+    margin-top: 23px;
+  }
   .ckeckedText li{
     display: flex;
     gap: 1rem;
   }
   .text-block h1{
+    margin-top: -10px;
     font-size: 60px;
     text-align: center;
   }
-  .ckeckedText h2{
-    margin-top: -5px;
+  .ckeckedText h3{
+    margin-top: 15px;
   }
   
   /* Bottom right text */
@@ -30,6 +33,7 @@
 
   }
   .logo{
+    margin-top: 10%;
    margin-left: 38%;
    
   }
@@ -38,7 +42,7 @@
     height: auto;
   }
   .buttons{
-    margin-left: 28%;
+    margin-left: 32%;
     margin-top: 5%;
   }
   .btn1{
@@ -113,7 +117,7 @@
     .text-block h1{
       font-size: 30px;
      }
-     .text-block h2{
+     .text-block h3{
       font-size: 25px;
      }
      button{
@@ -130,7 +134,7 @@
     .text-block h1{
       font-size: 25px;
      }
-     .text-block h2{
+     .text-block h3{
       font-size: 20px;
      }
      .buttons{
@@ -152,7 +156,7 @@
     .text-block h1{
       font-size: 18px;
      }
-     .text-block h2{
+     .text-block h3{
       font-size: 13px;
      }
      button{
@@ -173,7 +177,7 @@
     .text-block h1{
       font-size: 15px;
      }
-     .text-block h2{
+     .text-block h3{
       font-size: 10px;
      }
      button{
