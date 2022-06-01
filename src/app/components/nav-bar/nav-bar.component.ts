@@ -14,5 +14,12 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  scrollToAbout(){
+  
+    window.scrollTo(0,1800);
+  }
 
+  scrollToContact(){
+    window.scrollTo(0,2800);
+  }
 }
