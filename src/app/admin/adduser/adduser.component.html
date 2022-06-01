@@ -1,0 +1,96 @@
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="registerUser(f)">
+        <div class="form-group">
+            <label for="firstName">Firstname</label>
+            <input type="text" class="form-control" required name="firstName" 
+                   #firstName="ngModel" ngModel id="firstName" 
+                   aria-describedby="firstNameHelp" maxlength="20">
+        </div>
+        <!-- Firstname validation-->
+        <div class="alert alert-danger" *ngIf="firstName.errors?.['required'] && firstName.touched">
+          FirstName is required.
+        </div>
+        <div class="alert alert-danger" *ngIf="firstName.errors?.['maxlength'] && firstName.touched">
+          FirstName length must not exceed 20.
+        </div>
+        <!-- End of Firstname validation-->
+        <div class="form-group">
+            <label for="lastName">Lastname</label>
+            <input type="text" class="form-control" id="lastName" 
+            #lastName="ngModel" ngModel maxlength="20" aria-describedby="latsNameHelp">
+        </div>
+        <!-- Lastname validation-->
+        <div class="alert alert-danger" *ngIf="lastName.errors?.['required'] && lastName.touched">
+          Lastname is required
+        </div>
+        <div class="alert alert-danger" *ngIf="lastName.errors?.['maxlength'] && lastName.touched">
+          Lastname length must not exceed 20.
+        </div>
+        <!-- End of Lastname validation-->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" 
+          #email="ngModel" ngModel name="email" required aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <!-- Email validation-->
+        <div class="alert alert-danger" *ngIf="email.errors?.['required'] && email.touched">
+          Email is required
+        </div>
+        <div class="alert alert-danger" *ngIf="email.errors?.['email'] && email.touched">
+          Invalid email!
+        </div>
+        <!-- End of Email validation-->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" #password="ngModel" minlength="6" ngModel required id="password" name="password">
+        </div>
+        <!-- Password validation -->
+        <div class="alert alert-danger" *ngIf="password.errors?.['required'] && password.touched">
+          Password is required.
+        </div>
+        <div class="alert alert-danger" *ngIf="password.errors?.['minlength'] && password.touched">
+          Password must be longer than 6 characters!
+        </div>
+        <!-- End of Password validation -->
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Passord</label>
+            <input type="password" class="form-control" id="confirmPassword">
+        </div>
+        <!--Start of confirm password validation -->
+
+        <!--End of confirm password validation -->
+        <div class="form-group">
+            <label for="phoneNumber">Phone number</label>
+            <input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp">
+        </div>
+        <div class="form-group">
+            <label for="cin">CIN</label>
+            <input type="text" class="form-control" required 
+            name="cin" #cin="ngModel" ngModel id="cin"
+            minlength="8" maxlength="8" aria-describedby="cinHelp">
+        </div>
+        <!--Start of cin validation -->
+        <div class="alert alert-danger" *ngIf="cin.errors?.['required'] && cin.touched">
+          CIN is required
+        </div>
+        <div class="alert alert-danger" *ngIf="cin.errors?.['minlength'] && cin.errors?.['maxlength'] &&  cin.touched">
+          CIN length must be 8 digits
+        </div>
+        <!--End of cin validation-->
+        <div class="form-group">
+            <label>Avatar</label>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose photo</label>
+              </div>
+        </div>
+
+        <!-- Generic error message -->
+        <div class="alert alert-danger" *ngIf="messageErr">
+          {{messageErr}}
+        </div>
+        <!-- End of generic error message -->
+        <button type="submit" [disabled]="f.invalid" class="btn btn-primary">Submit</button>
+    </form>
+</div>
