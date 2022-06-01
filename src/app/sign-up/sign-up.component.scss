@@ -1,0 +1,19 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #6B1F20 0%, #401313 35%, #20090A 100%)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.card-body{
+    height: 744px;
+}
+.card-body h1{
+    color: aliceblue;
+}
+.card-body a {
+    color:white;
+}
