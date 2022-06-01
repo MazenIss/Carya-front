@@ -1,53 +1,8 @@
 {
-<<<<<<< HEAD
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "b5816627-811b-4356-94ed-4270e049fece"
-  },
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "carya-front": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/carya-front",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-=======
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "cli": {
+      "analytics": "e6a9021d-4f83-4a86-8ce0-ddc01121e42b"
+    },
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
@@ -56,7 +11,6 @@
             "schematics": {
                 "@schematics/angular:component": {
                     "style": "scss"
->>>>>>> b02722256a3e2383203f3648b631c9de7082d4d0
                 },
                 "@schematics/angular:application": {
                     "strict": true

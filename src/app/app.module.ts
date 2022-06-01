@@ -12,22 +12,29 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TeamComponent } from './components/team/team.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LandingComponent } from './landing/landing.component';
+import { LoginUserComponent } from './login-user/login-user.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    DashboardComponent
+    DashboardComponent,
+    TeamComponent,
+    NavBarComponent,
+    ContactComponent,
+    CarouselComponent,
+    HomePageComponent,
+    LandingComponent,
+    LoginUserComponent,
+    SignUpComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NavBarComponent,
-    HomePageComponent,
-    CarouselComponent,
-    TeamComponent,
-    ContactComponent,
     FontAwesomeModule,
   ],
   providers: [],
