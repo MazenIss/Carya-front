@@ -1,0 +1,67 @@
+img {
+    width: 130px;
+    height: 80px;
+}
+
+.d-flex {
+    margin: 0px 10px 10px 0px;
+    button {
+        border-radius: 10px;
+        white-space: nowrap;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.nav-item {
+    .nav-link {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav-link:hover {
+        color: #555
+    }
+}
+
+#navbarSupportedContent {
+    margin-left: 22%
+}
+
+@media only screen and (max-width: 1020px) {
+    #navbarSupportedContent {
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navbarSupportedContent {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #navbarSupportedContent {
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbarSupportedContent {
+        margin-left: 0%;
+    }
+}
+
+#twowords {
+    white-space: nowrap
+}
+
+.navbar-brand :hover {
+    transform: scale(1.5);
+}
+
+ul {
+    li {
+        a {
+            color: #555;
+        }
+    }
+}
